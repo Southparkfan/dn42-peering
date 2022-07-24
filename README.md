@@ -3,13 +3,14 @@ I operate [AS 4242421964](https://explorer.burble.com/?#/4242421964) in DN42. Th
 
 ## Nodes
 Quick overview of the available nodes:
-| Hostname                  | Location       | Bandwidth    | OS            | Supported protocols |
-|---------------------------|----------------|--------------|---------------|---------------------|
-| nl1.dn42.southparkfan.org | Netherlands 🇳🇱 | >= 1000 Mbit | Debian Buster | WireGuard           |
-| fr1.dn42.southparkfan.org | France 🇫🇷      | >= 100 Mbit  | VyOS 1.4      | OpenVPN, WireGuard  |
+| Hostname                  | Location       | Bandwidth    | OS              | Supported protocols |
+|---------------------------|----------------|--------------|-----------------|---------------------|
+| nl1.dn42.southparkfan.org | Netherlands 🇳🇱 | >= 1000 Mbit | Debian Buster   | WireGuard           |
+| nl2.dn42.southparkfan.org | Netherlands 🇳🇱 | >= 1000 Mbit | Debian Bullseye | WireGuard           |
+| fr1.dn42.southparkfan.org | France 🇫🇷      | >= 100 Mbit  | VyOS 1.4        | OpenVPN, WireGuard  |
 
 ### nl1.dn42.southparkfan.org
-- Status: online ✔
+- Status: being decommissioned 🚧
 - In use since: January 2022
 - Physical location: Alblasserdam, Netherlands
 - ISP: RamNode
@@ -22,10 +23,26 @@ Quick overview of the available nodes:
 - Multi-protocol BGP: supported ✔
 - Supported protocols: WireGuard
 - WireGuard public key: `OBpyD/rruK4pOCgRVrWVoexBNHZadtn4qwPmrEjt0gY=`
-- Routing daemon: Bird
+- Routing daemon: Bird 2.0
+
+### nl2.dn42.southparkfan.org
+- Status: online ✔
+- In use since: July 2022
+- Physical location: Amsterdam, Netherlands
+- ISP: Vultr
+- Clearnet IPv4: 95.179.143.233/32
+- Clearnet IPv6: 2001:19f0:5001:1f9a:5400:4ff:fe0d:d8f1/64
+- DN42 IPv4: 172.23.24.35/32
+- DN42 IPv6: fd4f:b934:7802::3/128
+- Link-local IPv6: fe80::ade0
+- Port: 4 + <last four digits of your AS number> (only if your AS number starts with `424242`)
+- Multi-protocol BGP: supported ✔
+- Supported protocols: WireGuard
+- WireGuard public key: `GsmcrWbFTcje5e+hmc0D6qonrkTpHksGZuk0cLBjDmY=`
+- Routing daemon: Bird 2.0
 
 ### fr1.dn42.southparkfan.org
-- Status: online ✔
+- Status: being decommissioned 🚧
 - In use since: May 2022
 - Physical location: Paris, France
 - ISP: Vultr
@@ -48,13 +65,14 @@ Welcome! I have set the following standards:
 - I prefer to peer over IPv6 link-local, although it's not mandatory.
 - Even though transit traffic is fine, please be considerate. The nodes do not have unlimited traffic. 
 
-You can contact me via [hackint](ircs://irc.hackint.org:6697) (my name is `southparkfan`). The template below may be used for reference:
+You can contact me via [Libera Chat](ircs://irc.libera.chat:6697) or [hackint](ircs://irc.hackint.org:6697) (my name is `southparkfan`). The template below may be used for reference:
 ```
-* Name/email:
+* Name and email address:
 * DN42 AS number:
-* Clearnet endpoint (<IPv4/IPv6/FQDN>:<port>):
-* Protocol (OpenVPN/WireGuard):
+* Your clearnet endpoint (<IPv4/IPv6/FQDN>:<port>):
+* Protocol (usually WireGuard):
 * WireGuard public key (if applicable):
 * Session type (IPv4/IPv6 separate or multi-protocol BGP):
-* BGP endpoint IP(s) (e.g. link-local IPv6):
+* NIC IP addresses (usually DN42 IPv4 + link-local IPv6: 
+* BGP peering IP(s) (usually link-local IPv6):
 ```
