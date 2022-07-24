@@ -19,7 +19,7 @@ Quick overview of the available nodes:
 - DN42 IPv4: 172.23.24.33/32
 - DN42 IPv6: fd4f:b934:7802::1/128
 - Link-local IPv6: fe80::ade0
-- Port: 4 + <last four digits of your AS number> (only if your AS number starts with `424242`)
+- Port: 4 + \<last four digits of your AS number\> (only if your AS number starts with `424242`)
 - Multi-protocol BGP: supported ✔
 - Supported protocols: WireGuard
 - WireGuard public key: `OBpyD/rruK4pOCgRVrWVoexBNHZadtn4qwPmrEjt0gY=`
@@ -35,7 +35,7 @@ Quick overview of the available nodes:
 - DN42 IPv4: 172.23.24.35/32
 - DN42 IPv6: fd4f:b934:7802::3/128
 - Link-local IPv6: fe80::ade0
-- Port: 4 + <last four digits of your AS number> (only if your AS number starts with `424242`)
+- Port: 4 + \<last four digits of your AS number\> (only if your AS number starts with `424242`)
 - Multi-protocol BGP: supported ✔
 - Supported protocols: WireGuard
 - WireGuard public key: `GsmcrWbFTcje5e+hmc0D6qonrkTpHksGZuk0cLBjDmY=`
@@ -51,7 +51,7 @@ Quick overview of the available nodes:
 - DN42 IPv4: 172.23.24.34/32
 - DN42 IPv6: fd4f:b934:7802::2/128
 - Link-local IPv6: fe80::ade0
-- Port: 4 + <last four digits of your AS number> (only if your AS number starts with `424242`)
+- Port: 4 + \<last four digits of your AS number\> (only if your AS number starts with `424242`)
 - Multi-protocol BGP: supported ✔
 - Supported protocols: OpenVPN, WireGuard
 - WireGuard public key: `DHKTSvfaIhXdT07udajvVGtIt0NGMAqTjztrdVKGQzQ=`
