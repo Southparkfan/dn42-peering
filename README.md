@@ -28,7 +28,7 @@ Quick overview of the available nodes:
 ### nl2.dn42.southparkfan.org
 - Status: online ✔
 - In use since: July 2022
-- Physical location: Amsterdam, Netherlands
+- Physical location: Haarlem, Netherlands
 - ISP: Vultr
 - Clearnet IPv4: 95.179.143.233/32
 - Clearnet IPv6: 2001:19f0:5001:1f9a:5400:4ff:fe0d:d8f1/64
@@ -73,6 +73,6 @@ You can contact me via [Libera Chat](ircs://irc.libera.chat:6697) or [hackint](i
 * Protocol (usually WireGuard):
 * WireGuard public key (if applicable):
 * Session type (IPv4/IPv6 separate or multi-protocol BGP):
-* NIC IP addresses (usually DN42 IPv4 + link-local IPv6: 
+* NIC IP addresses (usually DN42 IPv4 + link-local IPv6): 
 * BGP peering IP(s) (usually link-local IPv6):
 ```
