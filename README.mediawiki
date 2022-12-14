@@ -6,11 +6,7 @@ Quick overview of the available nodes:
 {|
 ! Hostname !! Location !! Bandwidth !! OS !! Supported protocols
 |-
-| nl1.dn42.southparkfan.org || Netherlands 🇳🇱 || >= 1000 Mbit || Debian Buster || WireGuard
-|-
 | nl2.dn42.southparkfan.org || Netherlands 🇳🇱 || >= 1000 Mbit || Debian Bullseye || WireGuard
-|-
-| fr1.dn42.southparkfan.org || France 🇫🇷 || >= 100 Mbit || VyOS 1.4 || OpenVPN, WireGuard
 |}
 
 === nl1.dn42.southparkfan.org ===
@@ -45,22 +41,6 @@ Quick overview of the available nodes:
 * WireGuard public key: <code>GsmcrWbFTcje5e+hmc0D6qonrkTpHksGZuk0cLBjDmY=</code>
 * Routing daemon: Bird 2.0
 
-=== fr1.dn42.southparkfan.org ===
-* Status: being decommissioned 🚧
-* In use since: May 2022
-* Physical location: Paris, France
-* ISP: Vultr
-* Clearnet IPv4: 95.179.219.72/32
-* Clearnet IPv6: 2a05:f480:1c00:f7b:5400:3ff:fefd:4756/128
-* DN42 IPv4: 172.23.24.34/32
-* DN42 IPv6: fd4f:b934:7802::2/128
-* Link-local IPv6: fe80::ade0
-* Port: 4 + <nowiki><last four digits of your AS number></nowiki> (only if your AS number starts with <code>424242</code>)
-* Multi-protocol BGP: supported ✔
-* Supported protocols: OpenVPN, WireGuard
-* WireGuard public key: <code>DHKTSvfaIhXdT07udajvVGtIt0NGMAqTjztrdVKGQzQ=</code>
-* Routing daemon: FRRouting
-
 == Peering with me ==
 Welcome! I have set the following standards:
 * Only export routes with valid ROAs (and no clearnet routes, of course). I'll drop routes that are not valid.
@@ -80,3 +60,20 @@ You can contact me via [ircs://irc.libera.chat:6697 Libera Chat] or [ircs://irc.
 * NIC IP addresses (usually DN42 IPv4 + link-local IPv6): 
 * BGP peering IP(s) (usually link-local IPv6):
 </nowiki></pre>
+
+== Former nodes ==
+=== fr1.dn42.southparkfan.org ===
+* Status: decommissioned
+* In use since: May 2022
+* Physical location: Paris, France
+* ISP: Vultr
+* Clearnet IPv4: 95.179.219.72/32
+* Clearnet IPv6: 2a05:f480:1c00:f7b:5400:3ff:fefd:4756/128
+* DN42 IPv4: 172.23.24.34/32
+* DN42 IPv6: fd4f:b934:7802::2/128
+* Link-local IPv6: fe80::ade0
+* Port: 4 + <nowiki><last four digits of your AS number></nowiki> (only if your AS number starts with <code>424242</code>)
+* Multi-protocol BGP: supported ✔
+* Supported protocols: OpenVPN, WireGuard
+* WireGuard public key: <code>DHKTSvfaIhXdT07udajvVGtIt0NGMAqTjztrdVKGQzQ=</code>
+* Routing daemon: FRRouting
