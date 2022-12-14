@@ -1,0 +1,79 @@
+= AS 4242421964 / SPF-NET =
+I operate [https://explorer.burble.com/?#/4242421964 AS 4242421964] in DN42. The ranges <code>172.23.24.32/27</code> and <code>fd4f:b934:7802::/48</code> have been reserved for this purpose. At the moment, a full mesh is in use to avoid split-horizon issues in iBGP.
+
+== Nodes ==
+Quick overview of the available nodes:
+{|
+! Hostname !! Location !! Bandwidth !! OS !! Supported protocols
+|-
+| nl2.dn42.southparkfan.org || Netherlands 🇳🇱 || >= 1000 Mbit || Debian Bullseye || WireGuard
+|}
+
+=== nl1.dn42.southparkfan.org ===
+* Status: being decommissioned 🚧
+* In use since: January 2022
+* Physical location: Alblasserdam, Netherlands
+* ISP: RamNode
+* Clearnet IPv4: 176.56.237.46/32
+* Clearnet IPv6: 2a00:d880:11::396/128
+* DN42 IPv4: 172.23.24.33/32
+* DN42 IPv6: fd4f:b934:7802::1/128
+* Link-local IPv6: fe80::ade0
+* Port: 4 + <nowiki><last four digits of your AS number></nowiki> (only if your AS number starts with <code>424242</code>)
+* Multi-protocol BGP: supported ✔
+* Supported protocols: WireGuard
+* WireGuard public key: <code>OBpyD/rruK4pOCgRVrWVoexBNHZadtn4qwPmrEjt0gY=</code>
+* Routing daemon: Bird 2.0
+
+=== nl2.dn42.southparkfan.org ===
+* Status: online ✔
+* In use since: July 2022
+* Physical location: Haarlem, Netherlands
+* ISP: Vultr
+* Clearnet IPv4: 95.179.143.233/32
+* Clearnet IPv6: 2001:19f0:5001:1f9a:5400:4ff:fe0d:d8f1/64
+* DN42 IPv4: 172.23.24.35/32
+* DN42 IPv6: fd4f:b934:7802::3/128
+* Link-local IPv6: fe80::ade0
+* Port: 4 + <nowiki><last four digits of your AS number></nowiki> (only if your AS number starts with <code>424242</code>)
+* Multi-protocol BGP: supported ✔
+* Supported protocols: WireGuard
+* WireGuard public key: <code>GsmcrWbFTcje5e+hmc0D6qonrkTpHksGZuk0cLBjDmY=</code>
+* Routing daemon: Bird 2.0
+
+== Peering with me ==
+Welcome! I have set the following standards:
+* Only export routes with valid ROAs (and no clearnet routes, of course). I'll drop routes that are not valid.
+* WireGuard is preferred for connecting with my nodes, but OpenVPN may be used if my node supports it.
+* Multi-protocol BGP is preferred, but not required. Let me know if you need separate sessions for IPv4 and IPv6.
+* I prefer to peer over IPv6 link-local, although it's not mandatory.
+* Even though transit traffic is fine, please be considerate. The nodes do not have unlimited traffic. 
+
+You can contact me via [ircs://irc.libera.chat:6697 Libera Chat] or [ircs://irc.hackint.org:6697 hackint] (my name is <code>southparkfan</code>). The template below may be used for reference:
+<pre><nowiki>
+* Name and email address:
+* DN42 AS number:
+* Your clearnet endpoint (<IPv4/IPv6/FQDN>:<port>):
+* Protocol (usually WireGuard):
+* WireGuard public key (if applicable):
+* Session type (IPv4/IPv6 separate or multi-protocol BGP):
+* NIC IP addresses (usually DN42 IPv4 + link-local IPv6): 
+* BGP peering IP(s) (usually link-local IPv6):
+</nowiki></pre>
+
+== Former nodes ==
+=== fr1.dn42.southparkfan.org ===
+* Status: decommissioned
+* In use since: May 2022
+* Physical location: Paris, France
+* ISP: Vultr
+* Clearnet IPv4: 95.179.219.72/32
+* Clearnet IPv6: 2a05:f480:1c00:f7b:5400:3ff:fefd:4756/128
+* DN42 IPv4: 172.23.24.34/32
+* DN42 IPv6: fd4f:b934:7802::2/128
+* Link-local IPv6: fe80::ade0
+* Port: 4 + <nowiki><last four digits of your AS number></nowiki> (only if your AS number starts with <code>424242</code>)
+* Multi-protocol BGP: supported ✔
+* Supported protocols: OpenVPN, WireGuard
+* WireGuard public key: <code>DHKTSvfaIhXdT07udajvVGtIt0NGMAqTjztrdVKGQzQ=</code>
+* Routing daemon: FRRouting
